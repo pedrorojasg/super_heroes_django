@@ -7,6 +7,18 @@ Consigna: Crear una web que muestre datos de tus superhéroes favoritos, guardad
 + Se deberán crear como mínimo 3 superhéroes, cada uno con dos poderes
 + Los superheróes se deben ver desde la web.
 
+## Instrucciones instalar proyecto en local
++ Crea una carpeta contenedora madre
++ Abre la consola y ubicate en la carpeta madre
++ Crea y activa el ambiente virtual
++ Clona el proyecto
++ Entra en la carpeta que acabas de clonar
++ Para instalar las dependencias corre este comando:
+
+```
+pip install -r requirements.txt
+```
+
 ## Instrucciones para cargar super heroes iniciales
 
 ```
