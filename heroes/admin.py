@@ -1,3 +1,6 @@
 from django.contrib import admin
+from heroes.models import SuperHeroe, Poder
 
-# Register your models here.
+
+admin.site.register(SuperHeroe)
+admin.site.register(Poder)
