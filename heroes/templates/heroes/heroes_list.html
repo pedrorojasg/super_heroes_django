@@ -4,7 +4,7 @@
 
 Lista de Superheroes:
 {% for heroe in heroes %}
-<p>{{ heroe.nombre }}</p>
+<p><a href="{% url 'heroe' heroe.id %}">{{ heroe.nombre }}</a></p>
 {% endfor %}
 
 {% endblock contenido_base %}
