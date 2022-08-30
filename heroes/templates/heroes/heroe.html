@@ -1,0 +1,12 @@
+{% extends "heroes/plantilla_base.html" %}
+
+{% block contenido_base %}
+
+<h3>Nombre: {{heroe.nombre}}</h3>
+<h3>Peso: {{heroe.peso_kg}}</h3>
+<h4>Lista de poderes:</h4>
+{% for poder in heroe.poder_set.all %}
+  <span>{{poder.nombre}}<br></span>
+{% endfor %}
+
+{% endblock contenido_base %}

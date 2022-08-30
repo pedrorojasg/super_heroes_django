@@ -15,3 +15,12 @@ def listar_heroes(request):
     documento_html = plantilla.render(diccionario)
 
     return HttpResponse(documento_html)
+
+
+def get_heroe(request, id):
+    heroe =  SuperHeroe.objects.get(id=id)
+    diccionario = {'heroe': heroe}
+    plantilla = loader.get_template('heroes/heroe.html')
+    documento_html = plantilla.render(diccionario)
+
+    return HttpResponse(documento_html)
