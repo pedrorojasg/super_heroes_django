@@ -3,5 +3,5 @@ from heroes.views import listar_heroes
 
 
 urlpatterns = [
-    path('', listar_heroes),
+    path('', listar_heroes, name="heroes"),
 ]
